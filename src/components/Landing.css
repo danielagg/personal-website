@@ -1,0 +1,13 @@
+.landing-name {
+  font-size: 3.5em;
+  margin: 0.2em 0 0 0;
+}
+
+.landing-title {
+  font-size: 1.6em;
+  margin: 0 0 1.5em 0;
+}
+
+.landing-description {
+  color: #a5a5a5;
+}

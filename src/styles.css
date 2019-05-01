@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700");
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background: #fefefe;
+  font-family: "Assistant", sans-serif;
+  color: #232323;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background: #49bbf4;
+  color: #000;
+}
+::-moz-selection {
+  background: #49bbf4;
+  color: #000;
+}
+
+body {
+  padding: 1em;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
