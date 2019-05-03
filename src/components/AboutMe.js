@@ -4,7 +4,7 @@ import * as Scroll from "react-scroll";
 
 function AboutMe() {
   return (
-    <div className="container">
+    <div className="about-me-container">
       <Scroll.Element name="about-me-anchor" className="element">
         <h1>about me</h1>
       </Scroll.Element>

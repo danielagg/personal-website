@@ -30,11 +30,11 @@ html {
 }
 
 ::selection {
-  background: #f4f442;
+  background: #fcc0c0;
   color: #000;
 }
 ::-moz-selection {
-  background: #f4f442;
+  background: #fcc0c0;
   color: #000;
 }
 

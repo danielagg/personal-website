@@ -1,4 +1,4 @@
-.container {
+.contact-container {
   margin: 0 0 3em 0;
 }
 
@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: 720px) {
-  .container {
+  .contact-container {
     margin: 0 0 7em 0;
   }
 }
