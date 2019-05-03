@@ -18,7 +18,7 @@ const LandingBody = () => {
               activeClass="active"
               to="about-me-anchor"
               smooth={true}
-              offset={100}
+              offset={-25}
               duration={450}
               className="main-navigation-list-item-link"
             >
@@ -28,9 +28,9 @@ const LandingBody = () => {
           <li className="main-navigation-list-item">
             <Scroll.Link
               activeClass="active"
-              to="view-projects-anchor"
+              to="my-projects-anchor"
               smooth={true}
-              offset={100}
+              offset={-25}
               duration={450}
               className="main-navigation-list-item-link"
             >

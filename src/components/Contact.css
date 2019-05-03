@@ -1,3 +1,7 @@
+.container {
+  margin: 0 0 3em 0;
+}
+
 .contact-list {
   margin: 0;
   padding: 0;
@@ -19,12 +23,8 @@
   border-bottom-color: var(--active-link-color);
 }
 
-.contact-wrapper {
-  margin: 0 0 3em 0;
-}
-
 @media screen and (min-width: 720px) {
-  .contact-wrapper {
+  .container {
     margin: 0 0 7em 0;
   }
 }

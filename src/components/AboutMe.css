@@ -1,3 +1,7 @@
+.container {
+  margin: 0 0 3em 0;
+}
+
 .resume-link {
   color: var(--default-link-color);
   text-decoration: none;
@@ -7,4 +11,10 @@
 .resume-link:hover {
   color: var(--active-link-color);
   border-bottom-color: var(--active-link-color);
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    margin: 0 0 7em 0;
+  }
 }
