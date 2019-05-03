@@ -1,18 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useCookies } from "react-cookie";
 import "./ThemeSelector.css";
 
 const ThemeSelector = () => {
   const [currentTheme, setCurrentTheme] = useState("light");
+  const [cookies, setCookie] = useCookies(["selectedTheme"]);
+
+  useEffect(() => {
+    if (cookies !== undefined) {
+      loadPreferredTheme(cookies.selectedTheme);
+    }
+  }, []);
+
+  const loadPreferredTheme = selectedTheme => {
+    if (selectedTheme !== undefined) {
+      changeTheme(selectedTheme);
+    }
+  };
+
+  const changeTheme = selectedTheme => {
+    addTransition();
+    document.documentElement.setAttribute("data-theme", selectedTheme);
+    setCurrentTheme(selectedTheme);
+    setCookie("selectedTheme", selectedTheme, {
+      path: "/",
+      expires: new Date("2099-01-31")
+    });
+  };
 
   const onChangeTheme = () => {
     if (currentTheme === "light") {
-      addTransition();
-      document.documentElement.setAttribute("data-theme", "dark");
-      setCurrentTheme("dark");
+      changeTheme("dark");
     } else {
-      addTransition();
-      document.documentElement.setAttribute("data-theme", "light");
-      setCurrentTheme("light");
+      changeTheme("light");
     }
   };
 
