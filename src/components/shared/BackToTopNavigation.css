@@ -1,14 +1,23 @@
 .back-to-top-container {
-  display: block;
   position: sticky;
   top: 0;
-  background: var(--main-bg);
   text-align: right;
   z-index: 1;
-  padding: 0.06em;
   opacity: 0.7;
+}
+
+.back-to-top-container p {
+  display: inline-block;
+  background: var(--main-bg);
+  padding: 0.4em;
 }
 
 .back-to-top-container p:hover {
   cursor: pointer;
+}
+
+@media screen and (min-width: 720px) {
+  .back-to-top-container p {
+    padding: 1.4em;
+  }
 }
