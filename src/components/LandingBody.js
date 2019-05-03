@@ -1,5 +1,6 @@
 import React from "react";
 import "./LandingBody.css";
+import * as Scroll from "react-scroll";
 
 const LandingBody = () => {
   return (
@@ -13,11 +14,28 @@ const LandingBody = () => {
       <nav className="main-navigation">
         <ul className="main-navigation-list">
           <li className="main-navigation-list-item">
-            <a href="#">about me</a>
+            <Scroll.Link
+              activeClass="active"
+              to="about-me-anchor"
+              smooth={true}
+              offset={100}
+              duration={450}
+              className="main-navigation-list-item-link"
+            >
+              about me
+            </Scroll.Link>
           </li>
           <li className="main-navigation-list-item">
-            {" "}
-            <a href="#">view projects</a>
+            <Scroll.Link
+              activeClass="active"
+              to="view-projects-anchor"
+              smooth={true}
+              offset={100}
+              duration={450}
+              className="main-navigation-list-item-link"
+            >
+              view portfolio
+            </Scroll.Link>
           </li>
         </ul>
       </nav>

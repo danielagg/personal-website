@@ -14,14 +14,15 @@
   padding: 1em 1.5em 1em 0;
 }
 
-.main-navigation-list-item a {
+.main-navigation-list-item-link {
   color: var(--default-link-color);
   text-decoration: none;
   padding-bottom: 0.2em;
   border-bottom: 2px dotted var(--default-link-border);
 }
 
-.main-navigation-list-item a:hover {
+.main-navigation-list-item-link:hover {
+  cursor: pointer;
   color: var(--active-link-color);
   border-bottom-color: var(--active-link-color);
 }

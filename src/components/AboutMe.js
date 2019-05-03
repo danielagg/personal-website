@@ -1,10 +1,13 @@
 import React from "react";
 import "./AboutMe.css";
+import * as Scroll from "react-scroll";
 
 function AboutMe() {
   return (
     <div>
-      <h1>about me</h1>
+      <Scroll.Element name="about-me-anchor" className="element">
+        <h1>about me</h1>
+      </Scroll.Element>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione
         at accusantium esse, sint commodi dolorum asperiores repellendus tempora
