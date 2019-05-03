@@ -9,14 +9,14 @@
 }
 
 .contact-list-item a {
-  color: var(--accent-gray);
+  color: var(--default-link-color);
   text-decoration: none;
-  border-bottom: 2px dotted var(--lighter-gray);
+  border-bottom: 2px dotted var(--default-link-border);
 }
 
 .contact-list-item a:hover {
-  color: var(--primary-gray);
-  border-bottom-color: var(--accent-gray);
+  color: var(--active-link-color);
+  border-bottom-color: var(--active-link-color);
 }
 
 .contact-wrapper {

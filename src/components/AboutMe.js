@@ -1,4 +1,5 @@
 import React from "react";
+import "./AboutMe.css";
 
 function AboutMe() {
   return (
@@ -11,7 +12,9 @@ function AboutMe() {
         consequuntur odit nostrum eveniet eaque? Ullam, quibusdam veniam
         repellat temporibus totam dolorem.
       </p>
-      <a href="">resumé</a>
+      <a className="resume-link" href="">
+        resumé (pdf)
+      </a>
     </div>
   );
 }

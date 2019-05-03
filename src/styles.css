@@ -1,31 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Anaheim");
 
 :root {
-  --desktop-breakpoint: 720px;
-
-  --primary-gray: #232323;
-  --accent-gray: #848484;
-  --lighter-gray: #cecece;
-  --off-white: #fefefe;
-
-  /* --off-white: #232323;
-  --accent-gray: #848484;
-  --lighter-gray: #cecece;
-  --primary-gray: #fefefe; */
+  --main-bg: #fefefe;
+  --primary-color: #232323;
+  --default-link-color: #929292;
+  --active-link-color: #df4a4a;
+  --default-link-border: #848484;
 }
 
 :root[data-theme="dark"] {
-  --off-white: #232323;
-  --accent-gray: #848484;
-  --lighter-gray: #cecece;
-  --primary-gray: #fefefe;
+  --main-bg: #232323;
+  --primary-color: #fefefe;
+  --default-link-color: #adadad;
+  --active-link-color: #df4a4a;
+  --default-link-border: #848484;
 }
 
 html {
   box-sizing: border-box;
-  background: var(--off-white);
+  background: var(--main-bg);
   font-family: "Anaheim", serif;
-  color: var(--primary-gray);
+  color: var(--primary-color);
 }
 
 *,
