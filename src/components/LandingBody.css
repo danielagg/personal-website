@@ -6,7 +6,7 @@
 }
 
 .main-navigation-list {
-  margin: 0 0 2em 0;
+  margin: 0 0 3em 0;
   padding: 0;
 }
 
@@ -34,6 +34,10 @@
     font-size: 1.2em;
     line-height: 1.7;
     margin: 0 0 1em 0;
+  }
+
+  .main-navigation-list {
+    margin: 0 0 5em 0;
   }
 
   .main-navigation-list-item a {

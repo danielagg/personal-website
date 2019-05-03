@@ -1,0 +1,30 @@
+.contact-list {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list-item {
+  list-style: none;
+  padding: 0.25em 0;
+}
+
+.contact-list-item a {
+  color: var(--accent-gray);
+  text-decoration: none;
+  border-bottom: 2px dotted var(--lighter-gray);
+}
+
+.contact-list-item a:hover {
+  color: var(--primary-gray);
+  border-bottom-color: var(--accent-gray);
+}
+
+.contact-wrapper {
+  margin: 0 0 3em 0;
+}
+
+@media screen and (min-width: 720px) {
+  .contact-wrapper {
+    margin: 0 0 7em 0;
+  }
+}
