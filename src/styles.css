@@ -14,6 +14,13 @@
   --primary-gray: #fefefe; */
 }
 
+:root[data-theme="dark"] {
+  --off-white: #232323;
+  --accent-gray: #848484;
+  --lighter-gray: #cecece;
+  --primary-gray: #fefefe;
+}
+
 html {
   box-sizing: border-box;
   background: var(--off-white);

@@ -1,11 +1,13 @@
 import React from "react";
 import "normalize.css";
-import LandingWrapper from "./components/LandingWrapper";
 import AboutMe from "./components/AboutMe";
+import LandingWrapper from "./components/LandingWrapper";
+import ThemeSelector from "./components/shared/ThemeSelector";
 
 function App() {
   return (
     <div className="App">
+      <ThemeSelector />
       <LandingWrapper />
       <AboutMe />
     </div>
