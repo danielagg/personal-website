@@ -1,6 +1,12 @@
 .footer-container {
   text-align: center;
   padding: 0;
-  margin: 4em 0;
+  margin: 2em 0;
   color: var(--default-link-color);
+}
+
+@media screen and (min-width: 720px) {
+  .footer-container {
+    margin: 4em 0;
+  }
 }

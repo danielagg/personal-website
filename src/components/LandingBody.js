@@ -18,7 +18,7 @@ const LandingBody = () => {
               activeClass="active"
               to="about-me-anchor"
               smooth={true}
-              offset={-25}
+              offset={-60}
               duration={450}
               className="main-navigation-list-item-link"
             >
@@ -30,7 +30,7 @@ const LandingBody = () => {
               activeClass="active"
               to="my-projects-anchor"
               smooth={true}
-              offset={-25}
+              offset={-60}
               duration={450}
               className="main-navigation-list-item-link"
             >

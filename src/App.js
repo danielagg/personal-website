@@ -4,6 +4,7 @@ import { CookiesProvider } from "react-cookie";
 import AboutMe from "./components/AboutMe";
 import LandingWrapper from "./components/LandingWrapper";
 import ThemeSelector from "./components/shared/ThemeSelector";
+import BackToTopNavigation from "./components/shared/BackToTopNavigation";
 import Footer from "./components/shared/Footer";
 import PortfolioWrapper from "./components/portfolio/PortfolioWrapper";
 
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <ThemeSelector />
         <LandingWrapper />
+        <BackToTopNavigation />
         <AboutMe />
         <PortfolioWrapper />
         <Footer />
