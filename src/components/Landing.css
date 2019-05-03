@@ -1,13 +1,11 @@
-.landing-name {
-  font-size: 3.5em;
-  margin: 0.2em 0 0 0;
+@import "../styles.css";
+
+.contact-list {
+  margin: 0;
+  padding: 0;
 }
 
-.landing-title {
-  font-size: 1.6em;
-  margin: 0 0 1.5em 0;
-}
-
-.landing-description {
-  color: #a5a5a5;
+.contact-list-item {
+  list-style: none;
+  padding: 0.2em 0;
 }

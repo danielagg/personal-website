@@ -1,39 +1,37 @@
 import React from "react";
 import "./Landing.css";
+import Header from "./shared/Header";
+import LandingBody from "./LandingBody";
 
 const Landing = () => {
   return (
     <>
-      <header>
-        <h1 className="landing-name">Daniel Agg</h1>
-        <h2 className="landing-title">Fullstack software developer</h2>
-
-        <p className="landing-description">
-          I am full stack software developer with more than three years of
-          professional experience, during which I worked primarly on enterprise
-          applications’ backends, as well as various front ends.
-        </p>
-      </header>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="#">About Me</a>
-          </li>
-          <li>
-            {" "}
-            <a href="#">View Projects</a>
-          </li>
-        </ul>
-      </nav>
+      <Header />
+      <LandingBody />
 
       <section>
-        <h2>Contact</h2>
-        <ul>
-          <li>daniel.agg@outlook.com</li>
-          <li>+36 20 612 1279</li>
-          <li>LinkedIn</li>
-          <li>GitHub</li>
+        <h2>say hello @</h2>
+        <ul className="contact-list">
+          <li className="contact-list-item">daniel.agg@outlook.com</li>
+          <li className="contact-list-item">+36 20 612 1279</li>
+          <li className="contact-list-item">
+            <a
+              href="https://www.linkedin.com/in/danielagg/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li className="contact-list-item">
+            <a
+              href="https://github.com/danielagg/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </li>
         </ul>
       </section>
     </>

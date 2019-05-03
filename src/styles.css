@@ -1,11 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Assistant:400,700");
+@import url("https://fonts.googleapis.com/css?family=Anaheim");
+
+:root {
+  --desktop-breakpoint: 720px;
+
+  --primary-gray: #232323;
+  --accent-gray: #848484;
+  --lighter-gray: #cecece;
+  --off-white: #fefefe;
+
+  /* --off-white: #232323;
+  --accent-gray: #848484;
+  --lighter-gray: #cecece;
+  --primary-gray: #fefefe; */
+}
 
 html {
-  scroll-behavior: smooth;
   box-sizing: border-box;
-  background: #fefefe;
-  font-family: "Assistant", sans-serif;
-  color: #232323;
+  background: var(--off-white);
+  font-family: "Anaheim", serif;
+  color: var(--primary-gray);
 }
 
 *,
@@ -15,16 +28,16 @@ html {
 }
 
 ::selection {
-  background: #49bbf4;
+  background: #f4f442;
   color: #000;
 }
 ::-moz-selection {
-  background: #49bbf4;
+  background: #f4f442;
   color: #000;
 }
 
 body {
-  padding: 1em;
+  padding: 1em 1.4em;
   line-height: 1.4;
 }
 
@@ -34,4 +47,15 @@ h3,
 h4,
 h5 {
   font-weight: 400;
+}
+
+p {
+  font-family: "Anaheim", serif;
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    margin: 0 auto;
+    max-width: 75%;
+  }
 }

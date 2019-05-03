@@ -1,0 +1,42 @@
+@import "../styles.css";
+
+.landing-description {
+  max-width: 95%;
+  margin: 0 0 2em 0;
+}
+
+.main-navigation-list {
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+.main-navigation-list-item {
+  list-style: none;
+  display: inline-block;
+  padding: 1em 1.5em 1em 0;
+}
+
+.main-navigation-list-item a {
+  color: var(--accent-gray);
+  text-decoration: none;
+  padding-bottom: 0.2em;
+  border-bottom: 2px dotted var(--lighter-gray);
+}
+
+.main-navigation-list-item a:hover {
+  color: var(--primary-gray);
+  border-bottom-color: var(--accent-gray);
+}
+
+@media screen and (min-width: 720px) {
+  .landing-description {
+    max-width: 65%;
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin: 0 0 1em 0;
+  }
+
+  .main-navigation-list-item a {
+    font-size: 1.2em;
+  }
+}

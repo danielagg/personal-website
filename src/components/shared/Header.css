@@ -1,0 +1,22 @@
+@import "../../styles.css";
+
+.landing-name {
+  font-size: 3.5em;
+  margin: 0.2em 0 0 0;
+}
+
+.landing-title {
+  font-size: 1.6em;
+  margin: 0 0 2em 0;
+}
+
+@media screen and (min-width: 720px) {
+  .landing-name {
+    font-size: 5em;
+    margin: 0;
+  }
+
+  .landing-title {
+    margin: -0.5em 0 3em 0;
+  }
+}
