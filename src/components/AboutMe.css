@@ -3,18 +3,22 @@
 }
 
 .resume-link {
-  color: var(--default-link-color);
   text-decoration: none;
-  border-bottom: 2px dotted var(--default-link-border);
+  background: var(--primary-color);
+  color: var(--main-bg);
+  padding: 1em 3em;
+  display: inline-block;
+  margin-top: 1em;
+  opacity: 0.4;
 }
 
 .resume-link:hover {
   color: var(--active-link-color);
-  border-bottom-color: var(--active-link-color);
+  opacity: 1;
 }
 
 @media screen and (min-width: 720px) {
   .about-me-container {
-    margin: 0 0 7em 0;
+    margin: 0 0 12em 0;
   }
 }

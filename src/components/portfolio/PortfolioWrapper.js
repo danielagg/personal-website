@@ -1,133 +1,49 @@
-import React from "react";
-import "./PortfolioWrapper.css";
+import React, { useState } from "react";
 import * as Scroll from "react-scroll";
+import "./PortfolioWrapper.css";
+import PortfolioItem from "./PortfolioItem";
 
 const PortfolioWrapper = () => {
+  const [projects, setProjects] = useState([
+    {
+      id: 1,
+      name: "Course Management CRUD app",
+      description:
+        "ASP.NET Core backend (EF Core, localDb), React frontend. A practice project for a full stack solution for general course management. Used GraphQL, Apollo.",
+      githubLink: "https://github.com/danielagg/course-management-crud",
+      fontAwesomeIcon: "fas fa-university",
+      colorScheme: "blue"
+    },
+    {
+      id: 2,
+      name: "Personal site",
+      description:
+        "This exact website - my personal, serverless portfolio, built with React, deployed to Zeit after each git push.",
+      githubLink: "https://github.com/danielagg/personal-website",
+      fontAwesomeIcon: "fas fa-portrait",
+      colorScheme: "red"
+    },
+    {
+      id: 3,
+      name: "Sertave Amplification app",
+      description:
+        "A website for a made-up guitar amplification manufacturer. Similar technologies as on the Course Management CRUD app.",
+      githubLink: "#",
+      fontAwesomeIcon: "fas fa-compact-disc",
+      colorScheme: "green"
+    }
+  ]);
+
   return (
     <div>
       <Scroll.Element name="my-projects-anchor" className="element">
-        <h1>projects</h1>
+        <h1 className="projects-title">projects</h1>
       </Scroll.Element>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui velit
-        ipsum, inventore recusandae laboriosam, laudantium rem voluptas corrupti
-        perspiciatis laborum, sed quod. Modi vitae pariatur libero excepturi
-        saepe corporis possimus, commodi veritatis illum culpa doloribus
-        consequuntur consequatur reiciendis eveniet, nulla, molestias quidem
-        voluptate accusamus fuga beatae eaque? Quis, voluptates?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis
-        quibusdam perspiciatis, dolorem vitae dolorum itaque explicabo tempora!
-        A, ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis
-        iusto suscipit magni repellendus voluptatibus aliquid ab officiis animi,
-        soluta commodi tempora. Ipsum laborum perferendis quod animi
-        perspiciatis provident dolore harum eveniet dicta numquam. Mollitia
-        iusto quaerat aliquam cum, possimus similique error veniam.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui velit
-        ipsum, inventore recusandae laboriosam, laudantium rem voluptas corrupti
-        perspiciatis laborum, sed quod. Modi vitae pariatur libero excepturi
-        saepe corporis possimus, commodi veritatis illum culpa doloribus
-        consequuntur consequatur reiciendis eveniet, nulla, molestias quidem
-        voluptate accusamus fuga beatae eaque? Quis, voluptates?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis
-        quibusdam perspiciatis, dolorem vitae dolorum itaque explicabo tempora!
-        A, ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis
-        iusto suscipit magni repellendus voluptatibus aliquid ab officiis animi,
-        soluta commodi tempora. Ipsum laborum perferendis quod animi
-        perspiciatis provident dolore harum eveniet dicta numquam. Mollitia
-        iusto quaerat aliquam cum, possimus similique error veniam.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui velit
-        ipsum, inventore recusandae laboriosam, laudantium rem voluptas corrupti
-        perspiciatis laborum, sed quod. Modi vitae pariatur libero excepturi
-        saepe corporis possimus, commodi veritatis illum culpa doloribus
-        consequuntur consequatur reiciendis eveniet, nulla, molestias quidem
-        voluptate accusamus fuga beatae eaque? Quis, voluptates?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis
-        quibusdam perspiciatis, dolorem vitae dolorum itaque explicabo tempora!
-        A, ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis
-        iusto suscipit magni repellendus voluptatibus aliquid ab officiis animi,
-        soluta commodi tempora. Ipsum laborum perferendis quod animi
-        perspiciatis provident dolore harum eveniet dicta numquam. Mollitia
-        iusto quaerat aliquam cum, possimus similique error veniam.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui velit
-        ipsum, inventore recusandae laboriosam, laudantium rem voluptas corrupti
-        perspiciatis laborum, sed quod. Modi vitae pariatur libero excepturi
-        saepe corporis possimus, commodi veritatis illum culpa doloribus
-        consequuntur consequatur reiciendis eveniet, nulla, molestias quidem
-        voluptate accusamus fuga beatae eaque? Quis, voluptates?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis
-        quibusdam perspiciatis, dolorem vitae dolorum itaque explicabo tempora!
-        A, ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis
-        iusto suscipit magni repellendus voluptatibus aliquid ab officiis animi,
-        soluta commodi tempora. Ipsum laborum perferendis quod animi
-        perspiciatis provident dolore harum eveniet dicta numquam. Mollitia
-        iusto quaerat aliquam cum, possimus similique error veniam.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui velit
-        ipsum, inventore recusandae laboriosam, laudantium rem voluptas corrupti
-        perspiciatis laborum, sed quod. Modi vitae pariatur libero excepturi
-        saepe corporis possimus, commodi veritatis illum culpa doloribus
-        consequuntur consequatur reiciendis eveniet, nulla, molestias quidem
-        voluptate accusamus fuga beatae eaque? Quis, voluptates?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis
-        quibusdam perspiciatis, dolorem vitae dolorum itaque explicabo tempora!
-        A, ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis
-        iusto suscipit magni repellendus voluptatibus aliquid ab officiis animi,
-        soluta commodi tempora. Ipsum laborum perferendis quod animi
-        perspiciatis provident dolore harum eveniet dicta numquam. Mollitia
-        iusto quaerat aliquam cum, possimus similique error veniam.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut qui velit
-        ipsum, inventore recusandae laboriosam, laudantium rem voluptas corrupti
-        perspiciatis laborum, sed quod. Modi vitae pariatur libero excepturi
-        saepe corporis possimus, commodi veritatis illum culpa doloribus
-        consequuntur consequatur reiciendis eveniet, nulla, molestias quidem
-        voluptate accusamus fuga beatae eaque? Quis, voluptates?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis
-        quibusdam perspiciatis, dolorem vitae dolorum itaque explicabo tempora!
-        A, ea.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quis
-        iusto suscipit magni repellendus voluptatibus aliquid ab officiis animi,
-        soluta commodi tempora. Ipsum laborum perferendis quod animi
-        perspiciatis provident dolore harum eveniet dicta numquam. Mollitia
-        iusto quaerat aliquam cum, possimus similique error veniam.
-      </p>
+      <div className="portfolio-wrapper">
+        {projects.map(project => (
+          <PortfolioItem key={project.id} project={project} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -10,7 +10,6 @@ html.transition *:after {
   cursor: pointer;
   background: none;
   border: none;
-  border-bottom: 1px dotted var(--default-link-border);
   color: var(--default-link-color);
   margin: 1em 0 0 0;
   padding: 0;

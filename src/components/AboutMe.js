@@ -9,11 +9,10 @@ function AboutMe() {
         <h1>about me</h1>
       </Scroll.Element>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione
-        at accusantium esse, sint commodi dolorum asperiores repellendus tempora
-        quasi voluptatum totam repudiandae quas laboriosam possimus qui ea
-        consequuntur odit nostrum eveniet eaque? Ullam, quibusdam veniam
-        repellat temporibus totam dolorem.
+        I'm a software developer from Hungary with more than three years of
+        professional experience. I've primarly worked on enterprise
+        applications’ backends, as well as various front ends, while working on
+        modern web applications as hobby projects, such as this site.
       </p>
       <a className="resume-link" href="">
         resumé (pdf)

@@ -1,6 +1,6 @@
 .back-to-top-container {
   position: sticky;
-  top: 85%;
+  top: 80%;
   text-align: right;
   z-index: 1;
   opacity: 0.85;
@@ -14,6 +14,7 @@
 
 .back-to-top-container p:hover {
   cursor: pointer;
+  color: var(--active-link-color);
 }
 
 @media screen and (min-width: 720px) {
