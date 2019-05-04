@@ -14,7 +14,7 @@ function AboutMe() {
         applications’ backends, as well as various front ends, while working on
         modern web applications as hobby projects, such as this site.
       </p>
-      <a className="resume-link" href="">
+      <a className="resume-link" href="#">
         resumé (pdf)
       </a>
     </div>

@@ -35,11 +35,11 @@ const PortfolioWrapper = () => {
   ]);
 
   return (
-    <div>
+    <div className="portfolio-container">
       <Scroll.Element name="my-projects-anchor" className="element">
         <h1 className="projects-title">projects</h1>
       </Scroll.Element>
-      <div className="portfolio-wrapper">
+      <div className="portfolio-items-wrapper">
         {projects.map(project => (
           <PortfolioItem key={project.id} project={project} />
         ))}

@@ -1,9 +1,12 @@
-.portfolio-wrapper {
+.portfolio-container {
+  margin: 0 0 5em 0;
+}
+
+.portfolio-items-wrapper {
   display: grid;
   grid-template-columns: 100%;
   row-gap: 1.5em;
   justify-content: space-evenly;
-  max-width: 97%;
   margin: 0.5em 0 0 0;
 }
 
@@ -13,7 +16,11 @@
 }
 
 @media screen and (min-width: 1100px) {
-  .portfolio-wrapper {
+  .portfolio-container {
+    margin: 0 0 10em 0;
+  }
+
+  .portfolio-items-wrapper {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     row-gap: 4em;
     column-gap: 4em;

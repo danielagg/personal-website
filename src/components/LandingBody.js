@@ -16,18 +16,6 @@ const LandingBody = () => {
           <li className="main-navigation-list-item">
             <Scroll.Link
               activeClass="active"
-              to="about-me-anchor"
-              smooth={true}
-              offset={-40}
-              duration={450}
-              className="main-navigation-list-item-link"
-            >
-              about me
-            </Scroll.Link>
-          </li>
-          <li className="main-navigation-list-item">
-            <Scroll.Link
-              activeClass="active"
               to="my-projects-anchor"
               smooth={true}
               offset={-40}
@@ -35,6 +23,18 @@ const LandingBody = () => {
               className="main-navigation-list-item-link"
             >
               view portfolio
+            </Scroll.Link>
+          </li>
+          <li className="main-navigation-list-item">
+            <Scroll.Link
+              activeClass="active"
+              to="about-me-anchor"
+              smooth={true}
+              offset={-40}
+              duration={450}
+              className="main-navigation-list-item-link"
+            >
+              about me
             </Scroll.Link>
           </li>
         </ul>

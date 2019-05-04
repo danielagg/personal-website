@@ -1,5 +1,5 @@
 .about-me-container {
-  margin: 0 0 3em 0;
+  margin: 0 0 5em 0;
 }
 
 .resume-link {
@@ -13,12 +13,7 @@
 }
 
 .resume-link:hover {
-  color: var(--active-link-color);
+  color: var(--primary-color);
+  background: var(--active-link-color);
   opacity: 1;
-}
-
-@media screen and (min-width: 720px) {
-  .about-me-container {
-    margin: 0 0 12em 0;
-  }
 }

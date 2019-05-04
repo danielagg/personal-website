@@ -15,8 +15,8 @@ function App() {
         <ThemeSelector />
         <LandingWrapper />
         <BackToTopNavigation />
-        <AboutMe />
         <PortfolioWrapper />
+        <AboutMe />
         <Footer />
       </div>
     </CookiesProvider>

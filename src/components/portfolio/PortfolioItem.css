@@ -6,7 +6,7 @@
   width: 100%;
   height: 2em;
   text-align: center;
-  margin: 0 0 0.2em 0.03em;
+  margin-bottom: 0.2em;
   font-size: 12em;
   color: var(--main-bg);
 }
