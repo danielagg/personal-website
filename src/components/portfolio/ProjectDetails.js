@@ -1,5 +1,5 @@
 import React from "react";
-import BackToTopNavigation from "../shared/BackToTopNavigation";
+import Footer from "../shared/Footer";
 import ThemeSelector from "../shared/ThemeSelector";
 import { Link } from "react-router-dom";
 import { Consumer } from "../../context";
@@ -15,8 +15,12 @@ const ProjectDetails = props => {
 
         return (
           <>
-            <Link to="/">&larr; Go back</Link>
-            <ThemeSelector />
+            <div className="project-details-top-utilities">
+              <Link className="project-details-go-back" to="/">
+                &larr; Go back
+              </Link>
+              <ThemeSelector />
+            </div>
 
             <div
               className={`project-details-top-bar project-details-top-bar--${
@@ -88,7 +92,7 @@ const ProjectDetails = props => {
               odio labore, dolorem optio ea rerum repudiandae, nam accusantium?
             </p>
 
-            <BackToTopNavigation />
+            <Footer />
           </>
         );
       }}
