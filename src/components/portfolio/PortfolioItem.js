@@ -1,5 +1,6 @@
 import React from "react";
 import "./PortfolioItem.css";
+import { Link } from "react-router-dom";
 
 const PortfolioItem = props => {
   const { project } = props;
@@ -16,14 +17,13 @@ const PortfolioItem = props => {
       <h1 className="portfolio-item-title">{project.name}</h1>
       <p className="portfolio-item-description">{project.description}</p>
       <p className="portfolio-item-see-more-container">
-        <a
+        <Link
           className="portfolio-item-see-more-link"
-          rel="noopener noreferrer"
-          target="_blank"
-          href={project.githubLink}
+          to={`/project/${project.detailsLink}`}
+          state={project}
         >
           Details
-        </a>
+        </Link>
         {" | "}
         <a
           className="portfolio-item-see-more-link"

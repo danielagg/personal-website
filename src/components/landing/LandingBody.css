@@ -1,6 +1,10 @@
 .landing-description {
   max-width: 100%;
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
+}
+
+.main-navigation {
+  margin-bottom: 2em;
 }
 
 .main-navigation-list {

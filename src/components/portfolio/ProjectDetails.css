@@ -1,0 +1,23 @@
+.project-details-top-bar {
+  font-size: 1.4em;
+  margin: 2em 0;
+  padding: 1em;
+  text-align: center;
+}
+
+.project-details-top-bar--red {
+  background: var(--portfolio-item-red);
+}
+
+.project-details-top-bar--blue {
+  background: var(--portfolio-item-blue);
+}
+
+.project-details-top-bar--green {
+  background: var(--portfolio-item-green);
+}
+
+.portfolio-details-icon {
+  margin-top: 0.2em;
+  font-size: 7em;
+}

@@ -8,8 +8,7 @@ const Contact = () => {
         <li className="contact-list-item">
           You can reach me at{" "}
           <span style={{ fontWeight: "bold" }}>daniel.agg@outlook.com</span> or
-          call me directly at{" "}
-          <span style={{ fontWeight: "bold" }}>+36 20 612 1279</span>
+          via:
         </li>
         <li className="contact-list-item">
           <a

@@ -1,25 +1,26 @@
 import React from "react";
 import "normalize.css";
 import { CookiesProvider } from "react-cookie";
-import AboutMe from "./components/AboutMe";
-import LandingWrapper from "./components/LandingWrapper";
-import ThemeSelector from "./components/shared/ThemeSelector";
-import BackToTopNavigation from "./components/shared/BackToTopNavigation";
-import Footer from "./components/shared/Footer";
-import PortfolioWrapper from "./components/portfolio/PortfolioWrapper";
+import LandingPage from "./components/landing/LandingPage";
+import ProjectDetails from "./components/portfolio/ProjectDetails";
+import PageNotFound from "./components/shared/PageNotFound";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Provider as ContextProvider } from "./context";
 
 function App() {
   return (
-    <CookiesProvider>
-      <div className="App">
-        <ThemeSelector />
-        <LandingWrapper />
-        <BackToTopNavigation />
-        <PortfolioWrapper />
-        <AboutMe />
-        <Footer />
-      </div>
-    </CookiesProvider>
+    <ContextProvider>
+      <CookiesProvider>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/project/:id" component={ProjectDetails} />
+            <Route component={PageNotFound} />
+          </Switch>
+        </Router>
+        <div className="App" />
+      </CookiesProvider>
+    </ContextProvider>
   );
 }
 
