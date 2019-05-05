@@ -1,13 +1,12 @@
 .project-details-top-utilities {
   display: grid;
-  grid-template-columns: 50% 50%;
-  margin-top: 2em;
+  grid-template-columns: 100%;
+  margin-top: 1em;
 }
 
 .project-details-go-back {
   cursor: pointer;
   background: none;
-  margin-top: 0.3em;
   color: var(--default-link-color);
   padding: 0;
   font: inherit;
@@ -22,7 +21,7 @@
 
 .project-details-top-bar {
   font-size: 1.4em;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 2em;
   padding: 1em;
   text-align: center;
@@ -43,4 +42,19 @@
 .portfolio-details-icon {
   margin-top: 0.2em;
   font-size: 7em;
+}
+
+@media screen and (min-width: 720px) {
+  .project-details-top-utilities {
+    grid-template-columns: 50% 50%;
+    margin-top: 2em;
+  }
+
+  .project-details-go-back {
+    margin-top: 0.3em;
+  }
+
+  .project-details-top-bar {
+    margin-top: 3em;
+  }
 }
