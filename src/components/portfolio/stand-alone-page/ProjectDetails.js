@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Footer from "../shared/Footer";
-import ThemeSelector from "../shared/ThemeSelector";
+import Footer from "../../shared/footer/Footer";
+import ThemeSelector from "../../shared/theme-selector/ThemeSelector";
 import { Link } from "react-router-dom";
-import { Consumer } from "../../context";
+import { Consumer } from "../../../context";
 import "./ProjectDetails.css";
 
 const ProjectDetails = props => {

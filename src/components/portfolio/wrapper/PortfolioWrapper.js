@@ -1,8 +1,8 @@
 import React from "react";
 import * as Scroll from "react-scroll";
 import "./PortfolioWrapper.css";
-import PortfolioItem from "./PortfolioItem";
-import { Consumer } from "../../context";
+import PortfolioItem from "../quick-details/PortfolioItem";
+import { Consumer } from "../../../context";
 
 const PortfolioWrapper = () => {
   return (
