@@ -1,6 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import AboutMe from "./AboutMe";
+import { findByTestAttribute } from "./../../../utilities";
 
 const setUp = (props = {}) => {
   const component = shallow(<AboutMe {...props} />);
@@ -14,7 +15,7 @@ describe("About Me Component", () => {
   });
 
   it("Should render without errors", () => {
-    const wrapper = component.find(".about-me-container");
+    const wrapper = findByTestAttribute(component, "about-me-container");
     expect(wrapper.length).toBe(1);
   });
 });
