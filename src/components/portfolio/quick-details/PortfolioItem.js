@@ -40,7 +40,15 @@ const PortfolioItem = props => {
 };
 
 PortfolioItem.propTypes = {
-  project: PropTypes.object.isRequired
+  project: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    detailsLink: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    githubLink: PropTypes.string,
+    fontAwesomeIcon: PropTypes.string,
+    colorScheme: PropTypes.string.isRequired
+  })
 };
 
 export default PortfolioItem;
