@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutMe.css";
 import * as Scroll from "react-scroll";
 
-function AboutMe() {
+const AboutMe = () => {
   return (
     <div className="about-me-container" data-test="about-me-container">
       <Scroll.Element name="about-me-anchor" className="element">
@@ -19,6 +19,6 @@ function AboutMe() {
       </a>
     </div>
   );
-}
+};
 
 export default AboutMe;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./PortfolioItem.css";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const PortfolioItem = props => {
   const { project } = props;
@@ -36,6 +37,10 @@ const PortfolioItem = props => {
       </p>
     </div>
   );
+};
+
+PortfolioItem.propTypes = {
+  project: PropTypes.object.isRequired
 };
 
 export default PortfolioItem;

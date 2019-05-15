@@ -3,7 +3,7 @@ import "normalize.css";
 import { CookiesProvider } from "react-cookie";
 import LandingPage from "./components/landing/wrapper/LandingPage";
 import ProjectDetails from "./components/portfolio/stand-alone-page/ProjectDetails";
-import PageNotFound from "./PageNotFound";
+import PageNotFound from "./components/PageNotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider as ContextProvider } from "./context";
 
