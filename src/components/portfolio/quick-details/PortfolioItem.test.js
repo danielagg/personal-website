@@ -1,8 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import PortfolioItem from "./PortfolioItem";
-import { findByTestAttribute } from "./../../../../utilities";
-import checkPropTypes from "check-prop-types";
+import { findByTestAttribute, checkProps } from "./../../../../utilities";
 
 const setUp = (props = {}) => {
   const component = shallow(<PortfolioItem {...props} />);
@@ -24,13 +23,7 @@ describe("Portfolio Item Component", () => {
         }
       };
 
-      const propErrors = checkPropTypes(
-        PortfolioItem.propTypes,
-        expectedProps,
-        "props",
-        PortfolioItem.name
-      );
-
+      const propErrors = checkProps(PortfolioItem, expectedProps);
       expect(propErrors).toBeUndefined();
     });
   });
