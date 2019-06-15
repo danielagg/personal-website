@@ -6,9 +6,9 @@ const LandingBody = () => {
   return (
     <>
       <p className="landing-description">
-        I am full stack software developer with more than three years of
-        professional experience, during which I've primarly worked on enterprise
-        applications’ backends, as well as various front ends.
+        I am a full stack software developer with more than three years of
+        professional experience, during which I've primarily worked on
+        enterprise applications’ backends, as well as various front ends.
       </p>
 
       <nav className="main-navigation">
