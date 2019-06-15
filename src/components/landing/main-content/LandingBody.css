@@ -1,10 +1,17 @@
+@import "../../../animations.css";
+
 .landing-description {
   max-width: 100%;
   margin: 0 0 1em 0;
+  animation: easeInWithOpacityChange 1.3s;
+  animation-fill-mode: backwards;
 }
 
 .main-navigation {
   margin-bottom: 2em;
+  animation: easeInWithOpacityChange 1.3s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.2s;
 }
 
 .main-navigation-list {

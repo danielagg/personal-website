@@ -1,6 +1,11 @@
+@import "../../../animations.css";
+
 .contact-container {
   margin: 0;
   padding: 0;
+  animation: easeInWithOpacityChange 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.4s;
 }
 
 .contact-list {

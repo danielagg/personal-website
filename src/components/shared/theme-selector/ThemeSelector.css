@@ -1,3 +1,5 @@
+@import "../../../animations.css";
+
 html.transition,
 html.transition *,
 html.transition *:before,
@@ -15,6 +17,7 @@ html.transition *:after {
   padding: 0;
   font: inherit;
   outline: inherit;
+  animation: moveInFromRight 0.4s ease-out;
 }
 
 .theme-selector-control:hover {
